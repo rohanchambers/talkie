@@ -34,7 +34,7 @@ app.get('/', function (req, res) {
 // Socket IO global events. This broadcast to all clients
 var allSockets = app.io.sockets;
 
-function addConnetion() {
+function addConnection() {
 	info.connectionCount++;
 	allSockets.emit('update', info);
 	console.log('People connected (connected):' + info.connectionCount);
@@ -45,8 +45,6 @@ function removeConnection() {
 	allSockets.emit('update', info);
 	console.log('People connected (disconnected):' + info.connectionCount);
 }
-
-var appInfo = new appInfoO();
 
 // CONTROLLER
 
@@ -63,7 +61,7 @@ allSockets.on('connection', function(socket) {
 
 // client routes
 // app.io.route = client.on...
-app.io.route('positionCzhange', function(req) {
+app.io.route('positionChange', function(req) {
 	// assign new position to global
 	info.currentPosition = req.data;
 
