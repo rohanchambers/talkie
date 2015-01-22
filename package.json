@@ -1,0 +1,8 @@
+{
+  "name": "Talkie",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express.io": "^1.1.13"
+  }
+}

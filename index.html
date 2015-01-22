@@ -1,0 +1,37 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Talkie</title>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="/javascripts/jquery-ui.js"></script>
+	<script src="/javascripts/jquery.ui.touch-punch.min.js"></script>
+	
+	<!-- provided by Socket IO -->
+	<script src="/socket.io/socket.io.js"></script>
+	<script>var io = io.connect();</script>
+
+	<script src="/javascripts/client.js"></script>
+
+	<link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+	<div>
+		Connected: 
+		<span id="connection-count"></span>
+	</div>
+	
+	<div>
+		Position: 
+		<span id="shape-position"></span>
+	</div>
+	<div id="container">
+		<div id="shape"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#container {
+	width: 600px;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+
+	background: hotpink;
+}
+
+#shape {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: MintCream;
+	position: absolute;
+}
